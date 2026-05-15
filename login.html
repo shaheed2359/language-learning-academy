@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a style="text-decoration: none;" href="index.html" class="logo"><span>Learning</span>academy</a>
+<ul class="nav-links">
+<li class="dropdown">
+<a href="index.html">Home ▾</a>
+<ul class="dropdown-menu">
+<li><a href="index.html">Home 1</a></li>
+<li><a href="home1.html">Home 2</a></li>
+</ul>
+</li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">contact</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+<button id="rtl-toggle" class="icon-btn">
+    RTL
+</button>
+<button id="theme-toggle" class="icon-btn">
+<div class="menu-toggle">☰</div>
+<div class="button-group">
+<div class="right-section">
+<button class="btn secondary-btn" onclick="document.location='login.html'">
+            Login
+</button>
+</div>
+ 
+</div>
+</nav>
+
+<div class="login-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="login-left">
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+            Login to continue your language learning journey
+            with LearnAcademy.
+        </p>
+
+
+    </div>
+
+
+    <div class="login-right">
+
+        <form class="login-form">
+
+            <h2>Login</h2>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="#">Sign Up</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Learning Academy</title>
-    <link rel="stylesheet" href="learning.css">
+    <title>learning</title>
+     <link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
 <header>
 <nav class="navbar">
@@ -39,112 +38,51 @@
  
 </div>
 </nav>
-</header>     
-        <!-- ACTION BUTTONS -->
-        <div class="nav-actions">
-            <button id="theme-toggle">🌙</button>
-            <button class="login-btn">Login</button>
+
+     
+<section>
+        <div class="bigger">
+            <h3>DON'T BE A STRANGER</h3><br>
+            <p>Feel free to contact us if you need some help,
+               consultation or you have some other questions.</p>
         </div>
 
-    </div>
-</header>
-    
-<!-- ================= HERO SECTION ================= -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Learn Languages the Smart Way</h1>
-        <p>Join thousands of learners and start speaking a new language confidently with interactive lessons and expert teachers.</p>
-        <button class="primary-btn">Start Learning</button>
-    </div>
 </section>
 
 
-<!-- ================= FEATURES ================= -->
-<section class="features">
-    <h2>Why Choose Us?</h2>
-
-    <div class="feature-grid">
-
-        <div class="feature-card">
-            <h3>Live Virtual Classes</h3>
-            <p>Join interactive online sessions with expert instructors anytime.</p>
-        </div>
-
-        <div class="feature-card">
-            <h3>Recorded Lessons</h3>
-            <p>Rewatch classes anytime and learn at your own pace.</p>
-        </div>
-
-        <div class="feature-card">
-            <h3>Study Materials</h3>
-            <p>Access PDFs, audio lessons, and practice exercises.</p>
-        </div>
-
-        <div class="feature-card">
-            <h3>Native Speakers</h3>
-            <p>Learn pronunciation and fluency from native teachers.</p>
-        </div>
-
+<section>
+    <div class="contact">
+  <div class="left-panel">
+    <div class="center-circle">
+      <img src="images/hero_img-02.png" alt="Logo">
     </div>
-</section>
+  </div>
 
-
-<!-- ================= ABOUT SECTION ================= -->
-<section class="about">
-    <div class="about-text">
-        <h2>Highly Qualified Educators</h2>
-        <p>
-            Our academy brings together experienced teachers with advanced degrees and real-world expertise.
-            We focus on practical communication skills and cultural understanding.
-        </p>
-    </div>
-
-    <div class="about-image">
-        <img src="images/image5.avif" alt="Teachers">
-    </div>
-</section>
-
-
-<!-- ================= LEARNING SKILLS ================= -->
-<section class="skills">
-    <h2>What You Will Learn</h2>
-
-    <div class="skill-grid">
-
-        <div class="skill-card">
-            <h3>📝 Writing</h3>
-            <p>Improve writing skills for academic and professional communication.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>📖 Reading</h3>
-            <p>Understand books, articles, and real-world content easily.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>🗣 Speaking</h3>
-            <p>Speak confidently with native speakers worldwide.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>📈 Understanding</h3>
-            <p>Learn culture, grammar, and real-life usage of languages.</p>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- ================= NEWSLETTER ================= -->
-<section class="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
-
-    <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
-    </div>
-</section>
-
+  <div class="right-panel">
+    <h2>Fill in your details</h2><br><br><br>
+    <form>
+      <div class="form-group">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label for="number">Phone Number*</label>
+        <input type="number" id="number" placeholder="Enter Number">
+      </div>
+     <div class="form-group1">
+    <label for="comments" class="label">Comments</label>
+     <textarea id="comments" name="comments" placeholder="Enter your comments..."></textarea>
+     </div>
+      <div class="submit">
+          <button>submit details</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
@@ -231,37 +169,6 @@
         </div>
 
     </div>
-
-    <!-- BOTTOM -->
-    <div class="footer-bottom">
-        <p>© 2026 Language Learning Academy. All rights reserved.</p>
-    </div>
-
 </footer>
-
-
-<!-- ================= SCRIPT ================= -->
-<script>
-const themeBtn = document.getElementById("theme-toggle");
-const rtlBtn = document.getElementById("rtl-toggle");
-
-/* DARK MODE */
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    themeBtn.innerHTML = document.body.classList.contains("dark-mode")
-        ? "☀️"
-        : "🌙";
-});
-
-/* RTL MODE */
-rtlBtn.addEventListener("click", () => {
-    document.body.classList.toggle("rtl");
-
-    rtlBtn.innerHTML = document.body.classList.contains("rtl")
-        ? "LTR"
-        : "RTL";
-});
-</script>
 </body>
 </html>
