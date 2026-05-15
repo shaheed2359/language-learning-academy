@@ -13,7 +13,7 @@ body{
 }
  
 :root{
-    --primary:#ff8fa3;
+    --primary:black;
     --secondary:#fff5ef;
     --cream:#fffaf5;
     --dark:black;
@@ -88,7 +88,7 @@ body.dark-mode .testimonial-card{
  align-items:center;
  padding:22px 8%;
  z-index:1000;
- background:rgba(0,0,0,0.20);
+ background:black;
  backdrop-filter:blur(10px);
  transition:0.35s ease;
  text-decoration: none;
@@ -215,7 +215,7 @@ main{
 
 .services-hero{
     padding: 100px 8%;
-    background: linear-gradient(to right,#eef2ff,#f8faff);
+    background: whitesmoke;
     text-align: center;
 }
 
@@ -225,21 +225,21 @@ main{
 }
 
 .services-tag{
-    color: #4a6cf7;
+    color: black;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .services-hero h1{
     font-size: 58px;
-    color: #111827;
+    color: black;
     margin: 20px 0;
     line-height: 1.2;
 }
 
 .services-hero p{
     font-size: 18px;
-    color: #666;
+    color: black;
     line-height: 1.8;
 }
 
@@ -332,7 +332,7 @@ main{
 .process-card span{
     width: 70px;
     height: 70px;
-    background: #4a6cf7;
+    background: black;
     color: white;
     border-radius: 50%;
     display: inline-flex;
@@ -394,9 +394,9 @@ main{
 
 .services-cta{
     padding: 110px 8%;
-    background: linear-gradient(to right,#4a6cf7,#6c8fff);
+    background: white;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .cta-container{
@@ -418,8 +418,8 @@ main{
 .services-btn{
     display: inline-block;
     padding: 15px 35px;
-    background: white;
-    color: #4a6cf7;
+    background: black;
+    color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 700;
@@ -460,7 +460,7 @@ main{
     }
 }
  .footer {
-    background: #0f172a;
+    background: black;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -546,4 +546,82 @@ main{
     padding-top: 15px;
     font-size: 14px;
     color: #94a3b8;
+}
+
+
+#theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+#theme-toggle:hover {
+  transform: scale(1.1);
+  background: #f1f5ff;
+}
+
+/* optional active click effect */
+#theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.btn.secondary-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 30px;
+
+  background: black;
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.btn.secondary-btn:hover {
+  background: black;
+  transform: translateY(-2px);
+}
+
+/* click effect */
+.btn.secondary-btn:active {
+  transform: scale(0.96);
+}
+
+.icon-btn{
+ width:10%;
+    padding:10px;     
+    border:none;
+    background:white;
+    color: black;
+    font-size:22px;       
+    font-weight:bold;
+    border-radius:30px;   
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.icon-btn:hover{
+    background:white;
+    transform:scale(1.03); 
 }

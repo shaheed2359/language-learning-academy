@@ -4,7 +4,7 @@ html {
 
 /* FIX: prevent navbar overlap */
 .page-content {
-    padding-top: 100px; /* adjust based on navbar height */
+    padding-top: 100px;
 }
 
 .navbar{
@@ -17,7 +17,7 @@ html {
  align-items:center;
  padding:22px 8%;
  z-index:1000;
- background:rgba(0,0,0,0.20);
+ background:black;
  backdrop-filter:blur(10px);
  transition:0.35s ease;
  text-decoration: none;
@@ -134,7 +134,7 @@ nav a:hover::after {
  
 
 .blog-hero {
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    background: black;
     color: white;
     padding: 90px 20px;
     text-align: center;
@@ -206,7 +206,7 @@ nav a:hover::after {
 .blog-content a {
     display: inline-block;
     margin-top: 10px;
-    color: #4f46e5;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
@@ -226,18 +226,20 @@ nav a:hover::after {
 }
 
 .category-box {
-    background: white;
+    background: black;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     cursor: pointer;
     transition: 0.3s;
+    color: white;
 }
 
 .category-box:hover {
-    background: #4f46e5;
+    background: black;
     color: white;
 }
+
 .newsletter {
     background: #eef2ff;
     padding: 80px 20px;
@@ -267,14 +269,14 @@ nav a:hover::after {
 .newsletter-form button {
     padding: 12px 18px;
     border: none;
-    background: #4f46e5;
+    background: black;
     color: white;
     border-radius: 6px;
     cursor: pointer;
 }
 
  .footer {
-    background: #0f172a;
+    background: black;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -347,10 +349,10 @@ nav a:hover::after {
 }
 
 /* BRAND COLORS ON HOVER */
-.facebook:hover { background: #1877f2; }
-.instagram:hover { background: #e1306c; }
-.twitter:hover { background: #1da1f2; }
-.youtube:hover { background: #ff0000; }
+.facebook:hover { background: black; }
+.instagram:hover { background: black; }
+.twitter:hover { background: black; }
+.youtube:hover { background: black; }
 
 /* BOTTOM */
 .footer-bottom {
@@ -361,24 +363,6 @@ nav a:hover::after {
     font-size: 14px;
     color: #94a3b8;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* =========================
    HERO SECTION
@@ -525,7 +509,7 @@ nav a:hover::after {
 .newsletter-form button {
     padding: 12px 18px;
     border: none;
-    background: #4f46e5;
+    background: black;
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -536,7 +520,7 @@ nav a:hover::after {
 ========================= */
 
 .footer {
-    background: #0f172a;
+    background: black;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -646,4 +630,81 @@ nav a:hover::after {
 
 .dark-mode .newsletter {
     background: #1e293b;
+}
+
+#theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+#theme-toggle:hover {
+  transform: scale(1.1);
+  background: #f1f5ff;
+}
+
+/* optional active click effect */
+#theme-toggle:active {
+  transform: scale(0.95);
+} 
+
+.icon-btn{
+ width:10;
+    padding:10px;     
+    border:none;
+    background:white;
+    color: black;
+    font-size:22px;       
+    font-weight:bold;
+    border-radius:10px;   
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.icon-btn:hover{
+    background:white;
+    transform:scale(1.03); 
+}
+
+.btn.secondary-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 30px;
+
+  background: black;
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.btn.secondary-btn:hover {
+  background: black;
+  transform: translateY(-2px);
+}
+
+/* click effect */
+.btn.secondary-btn:active {
+  transform: scale(0.96);
 }

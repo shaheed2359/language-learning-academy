@@ -9,7 +9,7 @@
 <body>
 <header>
 <nav class="navbar">
-<a style="text-decoration: none;" href="index.html" class="logo"><span>Learning</span>academy</a>
+<a style="text-decoration: none;" href="index.html" class="logo"><span style="color: white;"><b>LearningAcademy</b></span></a>
 <ul class="nav-links">
 <li class="dropdown">
 <a href="index.html">Home ▾</a>
@@ -28,7 +28,7 @@
     RTL
 </button>
 <button id="theme-toggle" class="icon-btn">
-<div class="menu-toggle">☰</div>
+<div class="menu-toggle">🌙</div>
 <div class="button-group">
 <div class="right-section">
 <button class="btn secondary-btn" onclick="document.location='login.html'">
@@ -38,51 +38,120 @@
  
 </div>
 </nav>
+</header>
+<section class="contact-section">
 
-     
-<section>
-        <div class="bigger">
-            <h3>DON'T BE A STRANGER</h3><br>
-            <p>Feel free to contact us if you need some help,
-               consultation or you have some other questions.</p>
-        </div>
+  <div class="contact-container">
+
+    <!-- Contact Form -->
+    <div class="contact-form-box">
+      <h2>Contact Us</h2>
+      <p>Have questions about our language courses? Send us a message.</p>
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="text" placeholder="Subject" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </div>
+
+    <!-- Timing Table -->
+    <div class="timing-box">
+      <h2>Academy Timings</h2>
+
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Timing</th>
+        </tr>
+
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM - 6:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Saturday</td>
+          <td>10:00 AM - 4:00 PM</td>
+        </tr>
+
+        <tr>
+          <td>Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<section>
-    <div class="contact">
-  <div class="left-panel">
-    <div class="center-circle">
-      <img src="images/hero_img-02.png" alt="Logo">
-    </div>
-  </div>
-
-  <div class="right-panel">
-    <h2>Fill in your details</h2><br><br><br>
-    <form>
-      <div class="form-group">
-        <label for="name">Name*</label>
-        <input type="text" id="name" placeholder="Enter Name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email*</label>
-        <input type="email" id="email" placeholder="Enter Email">
-      </div>
-      <div class="form-group">
-        <label for="number">Phone Number*</label>
-        <input type="number" id="number" placeholder="Enter Number">
-      </div>
-     <div class="form-group1">
-    <label for="comments" class="label">Comments</label>
-     <textarea id="comments" name="comments" placeholder="Enter your comments..."></textarea>
-     </div>
-      <div class="submit">
-          <button>submit details</button>
-      </div>
-    </form>
-  </div>
-</div>
+<script>
+ 
+  const themeToggle = document.getElementById("theme-toggle");
+ 
+  themeToggle.addEventListener("click", () => {
+ 
+    document.body.classList.toggle("dark-mode");
+ 
+    if(document.body.classList.contains("dark-mode")){
+      themeToggle.innerHTML = "☀️";
+    }
+    else{
+      themeToggle.innerHTML = "🌙";
+    }
+ 
+  });
+ 
+  const rtlToggle = document.getElementById("rtl-toggle");
+ 
+  rtlToggle.addEventListener("click", () => {
+ 
+    if(document.body.getAttribute("dir") === "rtl"){
+ 
+      document.body.setAttribute("dir", "ltr");
+ 
+    }
+    else{
+ 
+      document.body.setAttribute("dir", "rtl");
+ 
+    }
+ 
+  });
+ 
+</script>
+ 
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
