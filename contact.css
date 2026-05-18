@@ -319,8 +319,8 @@ table tr:nth-child(even) {
   border: none;
   border-radius: 30px;
 
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 
   cursor: pointer;
 
@@ -340,15 +340,21 @@ table tr:nth-child(even) {
   transform: scale(0.96);
 }
 
+.nn{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
 .icon-btn{
- width:10%;
+ width:22%;
     padding:10px;     
     border:none;
     background:white;
     color: black;
-    font-size:22px;       
+    font-size:10px;       
     font-weight:bold;
-    border-radius:30px;   
+    border-radius:15px;   
     cursor:pointer;
     transition:0.3s;
 }

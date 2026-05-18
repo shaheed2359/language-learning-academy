@@ -21,6 +21,7 @@ html {
  backdrop-filter:blur(10px);
  transition:0.35s ease;
  text-decoration: none;
+ padding-left: 10px;
 }
  
 .navbar.scrolled{
@@ -30,7 +31,7 @@ html {
  
 .logo{
  font-family:'Outfit', sans-serif;
- font-size:30px;
+ font-size:15px;
  font-weight:800;
  color:black;
  letter-spacing:1px;
@@ -39,6 +40,12 @@ html {
  
 .logo span{
  color:var(--primary);
+}
+
+.logo span {
+    font-size: 33px;
+    font-weight: bold;
+    color:black;
 }
  
 .nav-links{
@@ -662,15 +669,22 @@ nav a:hover::after {
   transform: scale(0.95);
 } 
 
+
+.nn{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
 .icon-btn{
- width:10;
+ width:22%;
     padding:10px;     
     border:none;
     background:white;
     color: black;
-    font-size:22px;       
+    font-size:10px;       
     font-weight:bold;
-    border-radius:10px;   
+    border-radius:15px;   
     cursor:pointer;
     transition:0.3s;
 }
@@ -688,8 +702,8 @@ nav a:hover::after {
   border: none;
   border-radius: 30px;
 
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 
   cursor: pointer;
 
@@ -700,7 +714,7 @@ nav a:hover::after {
 
 /* hover effect */
 .btn.secondary-btn:hover {
-  background: black;
+  background: white;
   transform: translateY(-2px);
 }
 

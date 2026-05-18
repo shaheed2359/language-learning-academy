@@ -29,14 +29,15 @@ body {
 }
 
 /* LOGO */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.logo{
+    font-size:18px;
+    font-weight:700;
+    color:var(--dark);
 }
 
 .logo span {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color:black;
 }
@@ -626,8 +627,8 @@ nav a:hover::after {
   border: none;
   border-radius: 30px;
 
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 
   cursor: pointer;
 
@@ -638,7 +639,7 @@ nav a:hover::after {
 
 /* hover effect */
 .btn.secondary-btn:hover {
-  background: black;
+  background: white;
   transform: translateY(-2px);
 }
 
@@ -647,15 +648,22 @@ nav a:hover::after {
   transform: scale(0.96);
 }
 
+.nn{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+
 .icon-btn{
- width:10%;
+ width:22%;
     padding:10px;     
     border:none;
     background:white;
     color: black;
-    font-size:22px;       
+    font-size:10px;       
     font-weight:bold;
-    border-radius:30px;   
+    border-radius:15px;   
     cursor:pointer;
     transition:0.3s;
 }
