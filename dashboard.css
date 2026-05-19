@@ -102,6 +102,13 @@ body{
     margin-top: 30px;
 }
 
+:root{
+    --primary-color: #ff7b00;
+    --secondary-color: #1e3a8a;
+    --light-color: #ffffff;
+    --dark-color: #222222;
+}
+
 .course-card{
     width: 300px;
     background-color: white;

@@ -17,7 +17,7 @@ html {
  align-items:center;
  padding:22px 8%;
  z-index:1000;
- background:black;
+ background:#5883a8;
  backdrop-filter:blur(10px);
  transition:0.35s ease;
  text-decoration: none;
@@ -31,13 +31,21 @@ html {
  
 .logo{
  font-family:'Outfit', sans-serif;
- font-size:15px;
+ font-size:27px;
  font-weight:800;
  color:black;
  letter-spacing:1px;
  white-space:nowrap;
 }
  
+
+:root{
+    --primary-color: #ff7b00;
+    --secondary-color: #1e3a8a;
+    --light-color: #ffffff;
+    --dark-color: #222222;
+}
+
 .logo span{
  color:var(--primary);
 }
@@ -220,7 +228,7 @@ nav a:hover::after {
 
 .blog-categories {
     padding: 60px 20px;
-    background: #f8fafc;
+    background: rgb(235, 235, 247);
     text-align: center;
 }
 
@@ -283,7 +291,7 @@ nav a:hover::after {
 }
 
  .footer {
-    background: black;
+    background:#5883a8;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -302,11 +310,11 @@ nav a:hover::after {
 .footer-col h3 {
     margin-bottom: 12px;
     font-size: 16px;
-    color: #ffffff;
+    color: black;
 }
 
 .footer-col p {
-    color: #cbd5e1;
+    color: white;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -318,13 +326,13 @@ nav a:hover::after {
 
 .footer-col ul li {
     margin-bottom: 8px;
-    color: #94a3b8;
+    color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .footer-col ul li:hover {
-    color: #ffffff;
+    color: black;
 }
 
 /* SOCIAL ICONS */
@@ -368,7 +376,7 @@ nav a:hover::after {
     border-top: 1px solid #334155;
     padding-top: 15px;
     font-size: 14px;
-    color: #94a3b8;
+    color: white;
 }
 
 /* =========================
@@ -527,8 +535,8 @@ nav a:hover::after {
 ========================= */
 
 .footer {
-    background: black;
-    color: white;
+    background: #5883a8;
+    color: black;
     padding: 60px 20px 20px;
 }
 
@@ -546,11 +554,11 @@ nav a:hover::after {
 .footer-col h3 {
     margin-bottom: 12px;
     font-size: 16px;
-    color: #ffffff;
+    color: black;
 }
 
 .footer-col p {
-    color: #cbd5e1;
+    color: white;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -562,13 +570,13 @@ nav a:hover::after {
 
 .footer-col ul li {
     margin-bottom: 8px;
-    color: #94a3b8;
+    color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .footer-col ul li:hover {
-    color: #ffffff;
+    color: black;
 }
 
 /* SOCIAL ICONS */
@@ -612,7 +620,7 @@ nav a:hover::after {
     border-top: 1px solid #334155;
     padding-top: 15px;
     font-size: 14px;
-    color: #94a3b8;
+    color: white;
 }
 
 
