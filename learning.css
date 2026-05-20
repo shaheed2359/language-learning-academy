@@ -4,9 +4,11 @@
 
 .hero {
     background-image: url("images/header_English-Language-Learning-Academy.jpg");
-    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
     color: white;
-    padding: 80px;
+    padding: 200px;
     text-align: center;
     margin-top: 0px;
 }

@@ -215,40 +215,62 @@ nav a:hover::after {
 /* ================= SERVICES PAGE ================= */
 
 main{
-    margin-top: 110px;
+    margin-top: 0;
     overflow: hidden;
 }
+
 
 /* HERO */
 
 .services-hero{
     padding: 100px 8%;
     text-align: center;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('images/blog\ banner.jpg') no-repeat center/cover;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    padding: 30px;
+
 }
 
 
 .services-hero-content{
     max-width: 850px;
     margin: auto;
+    padding: 150px;
+     animation: blogHeroAnimation 1.2s ease;
+
 }
 
 .services-tag{
+    margin-top: 5px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #5883a8;
     color: black;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    
 }
 
 .services-hero h1{
-    font-size: 58px;
-    color: black;
+    font-size: 30px;
+    color: white;
     margin: 20px 0;
     line-height: 1.2;
+    padding: 40px;
 }
 
 .services-hero p{
-    font-size: 18px;
-    color: black;
-    line-height: 1.8;
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+    line-height: 1.2;
 }
 
 /* COMMON */
