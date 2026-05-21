@@ -1,0 +1,213 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #5883a8;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+.logo span {
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.btn.secondary-btn {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.footer {
+    background: #5883a8;
+    color: white;
+    padding: 60px 20px 20px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.footer-col p,
+.footer-col ul li {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1e293b;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons .icon:hover {
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header & Footer</title>
+    <link rel="stylesheet" href="pricing.css">
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span style="color:white;"><b>LearnLang</b></span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li class="dropdown">
+                <a href="index.html">Home ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home1.html">Home 2</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.css">pricing</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+        </ul>
+
+
+        <div class="right-section">
+
+            <button id="rtl-toggle" class="icon-btn">RTL</button>
+
+            <button id="theme-toggle" class="icon-btn">🌙</button>
+
+            <button class="btn secondary-btn"
+                onclick="document.location='login.html'">
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+</header>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>LearnLang</h3>
+            <p>Learn languages faster with expert teachers and interactive online classes.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Teachers</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Programs</h3>
+            <ul>
+                <li>English</li>
+                <li>Spanish</li>
+                <li>French</li>
+                <li>Business Language</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+                <li>Help Center</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#" class="icon facebook">FB</a>
+                <a href="#" class="icon instagram">IG</a>
+                <a href="#" class="icon twitter">X</a>
+                <a href="#" class="icon youtube">YT</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Language Learning Academy. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            themeToggle.innerHTML = "☀️";
+        } else {
+            themeToggle.innerHTML = "🌙";
+        }
+    });
+
+    const rtlToggle = document.getElementById("rtl-toggle");
+
+    rtlToggle.addEventListener("click", () => {
+        if (document.body.getAttribute("dir") === "rtl") {
+            document.body.setAttribute("dir", "ltr");
+        } else {
+            document.body.setAttribute("dir", "rtl");
+        }
+    });
+</script>
+
+</body>
+</html>

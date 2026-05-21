@@ -9,26 +9,202 @@
 
 <body>
 
+<!-- LOGIN SECTION -->
+
 <section class="login-section">
 
-  <div class="login-box">
-    <h2>Welcome Back</h2>
-    <p>Login to continue learning</p>
+    <!-- TOP RIGHT BUTTONS -->
 
-    <form>
-      <input type="text" placeholder="Enter Email or Username" required>
-      <input type="password" placeholder="Enter Password" required>
+    <div class="top-controls">
 
-      <button type="submit">Login</button>
+        <button id="rtl-toggle" class="icon-btn">
+            RTL
+        </button>
 
-      <div class="links">
-        <a href="#">Forgot Password?</a>
-        <a href="signup.html">Create Account</a>
-      </div>
-    </form>
-  </div>
+        <button id="theme-toggle">
+            🌙
+        </button>
+
+    </div>
+
+    <!-- LOGIN CARD -->
+
+    <div class="login-box">
+
+        <!-- LOGO -->
+
+        <div class="login-logo">
+            LearnLang
+        </div>
+
+        <!-- TITLE -->
+
+        <h2>
+            Welcome Back
+        </h2>
+
+        <p>
+            Login to continue your language learning journey
+        </p>
+
+        <!-- LOGIN FORM -->
+
+        <form class="login-form">
+
+            <input type="email"
+                   placeholder="Enter Email Address"
+                   required>
+
+            <!-- PASSWORD -->
+
+            <div class="password-box">
+
+                <input type="password"
+                       placeholder="Enter Password"
+                       id="password"
+                       required>
+
+                <span class="eye-icon"
+                      onclick="togglePassword()">
+                    👁
+                </span>
+
+            </div>
+
+            <!-- REMEMBER -->
+
+            <div class="remember-row">
+
+                <label class="remember-me">
+
+                    <input type="checkbox">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <!-- LOGIN BUTTON -->
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+        </form>
+
+        <!-- DIVIDER -->
+
+        <div class="divider">
+            <span>OR CONTINUE WITH</span>
+        </div>
+
+        <!-- SOCIAL LOGIN -->
+
+        <div class="social-login">
+
+            <button class="social-btn">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png">
+
+                Google
+
+            </button>
+
+            <button class="social-btn">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/0/747.png">
+
+                Apple
+
+            </button>
+
+        </div>
+
+        <!-- SIGNUP -->
+
+        <div class="signup-link">
+
+            Don’t have an account?
+
+            <a href="signup.html">
+                Create Account
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- PASSWORD SHOW/HIDE -->
+
+<script>
+
+function togglePassword(){
+
+    const password =
+    document.getElementById("password");
+
+    if(password.type === "password"){
+
+        password.type = "text";
+
+    }
+    else{
+
+        password.type = "password";
+
+    }
+}
+
+/* DARK MODE */
+
+const themeToggle =
+document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        themeToggle.innerHTML = "☀";
+
+    }
+    else{
+
+        themeToggle.innerHTML = "🌙";
+
+    }
+
+});
+
+/* RTL MODE */
+
+const rtlToggle =
+document.getElementById("rtl-toggle");
+
+rtlToggle.addEventListener("click", () => {
+
+    if(document.body.getAttribute("dir") === "rtl"){
+
+        document.body.setAttribute("dir", "ltr");
+
+    }
+    else{
+
+        document.body.setAttribute("dir", "rtl");
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
