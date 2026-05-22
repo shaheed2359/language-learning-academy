@@ -8,46 +8,161 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    
-</body>
-</html>
-<div class="signup-container">
+   
+    <!-- =========================
+     SIGNUP PAGE HTML
+========================= -->
 
-  <form class="signup-form">
+<section class="signup-container">
 
-    <h2>Create Account</h2>
+    <!-- RTL + DARK MODE -->
 
-    <div class="input-box">
-      <label>Full Name</label>
-      <input type="text" placeholder="Enter your full name">
+    <div class="top-icons">
+
+        <button id="rtl-toggle" class="icon-btn">
+            RTL
+        </button>
+
+        <button id="theme-toggle" class="icon-btn">
+            🌙
+        </button>
+
     </div>
 
-    <div class="input-box">
-      <label>Email Address</label>
-      <input type="email" placeholder="Enter your email">
-    </div>
+    <form class="signup-form">
 
-    <div class="input-box">
-      <label>Password</label>
-      <input type="password" placeholder="Enter password">
-    </div>
+        <!-- LOGO -->
 
-    <div class="input-box">
-      <label>Confirm Password</label>
-      <input type="password" placeholder="Confirm password">
-    </div>
+        <div class="signup-logo">
+            LearnLang
+        </div>
 
-    <button type="submit" class="signup-btn">
-      Sign Up
-    </button>
+        <h2>Create Account</h2>
 
-    <p class="login-text">
-      Already have an account?
-      <a href="#">Login</a>
-    </p>
+        <p class="signup-subtitle">
+            Start your language learning journey today
+        </p>
 
-  </form>
+        <!-- FULL NAME -->
 
-</div>
+        <div class="input-box">
+
+            <label>Full Name</label>
+
+            <input type="text"
+            placeholder="Enter your full name">
+
+        </div>
+
+        <!-- EMAIL -->
+
+        <div class="input-box">
+
+            <label>Email Address</label>
+
+            <input type="email"
+            placeholder="Enter your email">
+
+        </div>
+
+        <!-- PASSWORD -->
+
+        <div class="input-box password-box">
+
+            <label>Password</label>
+
+            <input type="password"
+            id="password"
+            placeholder="Enter password">
+
+            <span class="eye-icon"
+            onclick="togglePassword('password', this)">
+                👁
+            </span>
+
+        </div>
+
+        <!-- CONFIRM PASSWORD -->
+
+        <div class="input-box password-box">
+
+            <label>Confirm Password</label>
+
+            <input type="password"
+            id="confirm-password"
+            placeholder="Confirm password">
+
+            <span class="eye-icon"
+            onclick="togglePassword('confirm-password', this)">
+                👁
+            </span>
+
+        </div>
+
+        <!-- SIGNUP BUTTON -->
+
+        <button type="submit"
+        class="signup-btn">
+
+            Sign Up
+
+        </button>
+
+        <!-- DIVIDER -->
+
+        <div class="divider">
+            <span>OR SIGN UP WITH</span>
+        </div>
+
+        <!-- SOCIAL LOGIN -->
+
+        <div class="social-login">
+
+            <button type="button"
+            class="social-btn">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
+
+                Continue with Google
+
+            </button>
+
+            <button type="button"
+            class="social-btn">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/0/747.png">
+
+                Continue with Apple
+
+            </button>
+
+            <button type="button"
+            class="social-btn">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+
+                Continue with Facebook
+
+            </button>
+
+        </div>
+
+        <!-- LOGIN TEXT -->
+
+        <p class="login-text">
+
+            Already have an account?
+
+            <a href="signup.css">
+                create account
+            </a>
+
+        </p>
+
+    </form>
+
+</section>
 
  
+</body>
+</html>
